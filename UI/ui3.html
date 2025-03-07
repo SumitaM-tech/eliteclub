@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Social Network</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('https://img.freepik.com/free-vector/realistic-dynamic-fog-background_23-2149111508.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+        }
+
+        .get-involved-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .get-involved-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .pricing {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .pricing-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Centering the Sign-Up Box */
+        .center-signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Page -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Welcome to Elite Social Network</h1>
+            <p class="lead">An exclusive community for the world's most successful and influential individuals.</p>
+            <a href="#get-involved" class="btn get-involved-btn btn-lg">Get Involved</a>
+        </div>
+    </div>
+
+    <!-- Get Involved Section with Centered Sign-Up Box -->
+    <div id="get-involved" class="center-signup">
+        <div class="container text-center">
+            <h2>Get Involved</h2>
+            <p class="lead">Join our prestigious community with a one-time sign-up fee of $10,000.</p>
+
+            <div class="row pricing justify-content-center">
+                <div class="col-md-4">
+                    <div class="card pricing-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Sign-Up for $10,000</h3>
+                            <p class="card-text">Access to all premium features, exclusive events, and networking opportunities.</p>
+                            <a href="get_involved_form.html" class="btn btn-primary">Sign Up Now</a> <!-- Link to the form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Elite Social Network. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS & Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

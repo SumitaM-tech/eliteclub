@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elite Social Network</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScILyoW3BjTyQFP1vrKQDOGOoS-8i5s8UWDA&s'); /* Add your background image URL here */
+            background-size: cover; /* Ensures the image covers the entire screen */
+            background-position: center center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Adding opacity for readability */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            opacity: 0.9; /* Slight opacity to ensure text readability */
+        }
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-card h2 {
+            margin-top: 10px;
+            color: #333;
+            font-size: 1.4em;
+        }
+        .profile-card p {
+            color: #777;
+            font-size: 1em;
+        }
+        .contact-details {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .connect-btn {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .connect-btn:hover {
+            background-color: #444;
+        }
+        .title-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a light background behind the title */
+            border-radius: 12px;
+        }
+        .title-section h1 {
+            font-size: 2.5em;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Elite Social Network</h1>
+    </header>
+
+    <div class="title-section">
+        <h1>Welcome to the Elite Networking Platform</h1>
+        <p>Connect with influential leaders, innovators, and high-net-worth professionals.</p>
+    </div>
+
+    <div class="container">
+        <!-- Profile Card 1 -->
+        <div class="profile-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_W2LLAUOI-9qmw-QtFjtlNQ9HjEGKlF31cA&s" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p>CEO & Founder of XYZ Corp</p>
+            <div class="contact-details">
+                <p>Email: john.doe@xyz.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <button class="connect-btn" onclick="connectUser('John Doe')">Connect</button>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div class="profile-card">
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUFBAj7TQIX-H_wAe36DIzuqBocgcgbZi1yQ&s" alt="Profile Picture">
+            <h2>Jane Smith</h2>
+            <p>Investor & Entrepreneur</p>
+            <div class="contact-details">
+                <p>Email: jane.smith@invest.com</p>
+                <p>Phone: +987 654 3210</p>
+            </div>
+            <button class="connect-btn" onclick="connectUser('Jane Smith')">Connect</button>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div class="profile-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jrX_m-Qz8eYOO4T4o1vO__XD0shEErFVLw&s" alt="Profile Picture">
+            <h2>Michael Brown</h2>
+            <p>Global Marketing Strategist</p>
+            <div class="contact-details">
+                <p>Email: michael.brown@strategy.com</p>
+                <p>Phone: +111 222 3333</p>
+            </div>
+            <button class="connect-btn" onclick="connectUser('Michael Brown')">Connect</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulate connecting with a user
+        function connectUser(userName) {
+            alert(`You have connected with ${userName}.`);
+        }
+    </script>
+
+</body>
+</html>
